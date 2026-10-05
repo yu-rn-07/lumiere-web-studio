@@ -74,6 +74,10 @@ nav a {
     font-size: 14px;
 }
 
+.menu-button {
+    display: none;
+}
+
 .hero {
     min-height: 600px;
     display: flex;
@@ -183,4 +187,35 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+    }
+
+    .works-list {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
