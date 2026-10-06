@@ -6,6 +6,17 @@ menuButton.addEventListener("click", function() {
 });
 
 
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(function(question) {
+    question.addEventListener("click", function() {
+        const answer = question.parentElement.querySelector(".faq-answer");
+        answer.classList.toggle("open");
+        question.classList.toggle("open");
+    });
+});
+
+
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
         if(entry.isIntersecting == true) {
