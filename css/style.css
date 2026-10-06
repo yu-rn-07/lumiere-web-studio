@@ -36,6 +36,14 @@ main {
 
 section {
     padding: 100px 5%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
@@ -191,16 +199,27 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
-    .service-list {
-        flex-direction: column;
+    section {
+        padding: 70px 20px;
     }
 
-    .works-list {
-        flex-direction: column;
+    h2 {
+        font-size: 22px;
     }
 
     nav {
         display: none;
+    }
+
+    nav.open {
+        display: block;
+        padding: 30px 0;
+    }
+
+    nav.open ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 
     .menu-button {
@@ -211,11 +230,11 @@ footer p {
         font-size: 36px;
     }
 
-    section {
-        padding: 70px 20px;
+    .service-list {
+        flex-direction: column;
     }
 
-    h2 {
-        font-size: 22px;
+    .works-list {
+        flex-direction: column;
     }
 }
