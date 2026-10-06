@@ -35,7 +35,7 @@ main {
 }
 
 section {
-    padding: 100px 5%;
+    padding: 80px 5%;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.8s;
